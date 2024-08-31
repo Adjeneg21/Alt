@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Media Elements</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Sevillana&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        img{
+            width: 100%;
+            max-width: 35rem;
+            margin: auto;
+            display: block;
+        }
+
+        .fav-v{
+            background-color:orange;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        picture {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+
+        video, audio {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+
+        p {
+            text-align: center;
+        }
+        nav {
+            text-align: center; 
+            margin: 0 auto; 
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0; 
+            display: inline-block; 
+        }
+
+        nav ul li {
+            display: inline; 
+            margin: 0 15px; 
+        }
+
+        nav ul li a {
+            text-decoration: none; 
+            color:blue; 
+        }
+
+        nav ul li a:hover {
+            color: red;
+        }
+        .tech{
+            font-family: "Sevillana", cursive;
+        }
+        @media (max-width: 768px) {
+            body{
+                font-family: "Sevillana", cursive;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="../Assignment1/index.html">Home</a></li>
+                <li><a href="../Assignment1/Form.html">Application Form</a></li>
+                <li><a href="../Assignment2/table.html">Table</a></li>
+                <li><a href="../Assignment2/media.html">Media</a></li>
+            </ul>
+        </nav>
+        <h1>About Me</h1>
+        <p>Hi! I'm a passionate learner at AltSchool Africa, specializing in Web Development and eager to make an impact in the tech world.</p>
+
+        <picture>
+            <p>Sir Gabby</p>
+            <img src="/Tinz/Pic1.jpg" alt="My Photo">
+        </picture>
+
+        <div class="fav-v">
+            <P>Fav Music Video</P>
+            <video controls>
+                <source src="/Tinz/Chris Brown - Call Me Every Day (feat. WizKid) (NetNaija.com).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="fav-a">
+            <p>Music</p>
+            <audio controls>
+                <source src="/Tinz/Kizz Daniel - Cough (Odo) (NetNaija.com).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.n
+            </audio>
+        </div>
+
+        <img src="/Tinz/Tech1.jpg" alt="My Hobby">
+
+        <div class="tech">
+            <p>Technology like art is a soaring exercise of the human imagination.</p>
+        </div>
+    </div>
+</body>
+</html>
