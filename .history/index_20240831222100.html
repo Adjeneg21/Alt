@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - ALT School</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Sevillana&display=swap');
+
+        body {
+            font-family: "Karla", sans-serif;
+        }
+        .about-1 p{
+            font-family: "Nunito", sans-serif;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+        .picture{
+            width: 100%;
+            max-width: 30rem;
+        }
+        #about {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 20px;
+        }
+
+        .about-1,
+        .about-2 {
+            flex: 1 1 100%;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 768px) {
+            .about-1,
+            .about-2 {
+                flex: 1;
+            }
+        }
+        nav {
+            text-align: center; 
+            margin: 0 auto; 
+            border-bottom: dotted green 2px;
+        }
+
+        nav ul {
+
+            list-style-type: none; 
+            padding: 0; 
+            display: inline-block; 
+        }
+
+        nav ul li {
+            display: inline; 
+            margin: 0 15px; 
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black; 
+        }
+
+        nav ul li a:hover {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Form.html">Application Form</a></li>
+            <li><a href="/table.html">Table</a></li>
+            <li><a href="/media.html">Media</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about">
+            <div class="about-1">
+                <h1>About Me</h1>
+                <p><strong>ALT School ID:</strong> [ ALT/SOE/024/0296.]</p>
+                <img src="/Tinz/altschool-ID-Card.png" alt="" class="picture">
+            </div>
+            <div class="about-2">
+                <p><strong>Biography:</strong> 
+                    I am currently a student at ALT School, where I am pursuing a program in the School of Engineering. I joined ALT School to 
+                    enhance my skills in frontend engineering and to become a part of a community that fosters growth and innovation. 
+                    In addition to my studies, I am a frontend developer with a New Horizon certificate and i am currently undertaking a
+                    six-month internship as a frontend engineer at a startup tech firm.
+                </p>
+                <p><strong>Reasons for Joining ALT School:</strong> I joined ALT School because I want to learn from industry experts, gain
+                    practical experience, and build a network of like-minded individuals. The school's curriculum is aligned with my career
+                    goals and offers a comprehensive education in engineering principles.</p>
+                <p><strong>Goals for School of Engineering Programme:</strong> My goals include mastering software development, contributing to
+                    open-source projects, and securing a position as a software engineer in a leading tech company or a place that will be in
+                    need of my service. I aim to build mind blowing websites and grow in the tech world.</p>
+            </div>
+        </section>
+
+        <a href="#top" class="scroll-top" id="scroll-top">Scroll to Top</a>
+    </main>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollTopButton = document.getElementById('scroll-top');
+            if (window.scrollY > 200) {
+                scrollTopButton.style.display = 'block';
+            } else {
+                scrollTopButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
